@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   background: #fafafa;
   color: #1a1a1a;
   line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 640px;
   padding: 80px 24px 60px;
-  margin-left: max(24px, calc((100vw - 640px) / 3));
+  margin-left: max(24px, calc((100vw - 640px) / 6));
 }
 
 /* Hero */
@@ -24,17 +24,17 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Instrument Serif', serif;
-  font-size: 32px;
-  font-weight: 400;
-  letter-spacing: -0.3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
   margin-bottom: 12px;
 }
 
 .hero p {
-  font-size: 16px;
+  font-size: 14px;
   color: #6b6b6b;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Tabs */
@@ -46,8 +46,8 @@ body {
 }
 
 .tab {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
   font-weight: 500;
   color: #6b6b6b;
   background: none;
@@ -116,26 +116,26 @@ body {
 
 .timeline-content .date {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   margin-bottom: 4px;
 }
 
 .timeline-content h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 
 .timeline-content .company {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #6b6b6b;
   margin-bottom: 6px;
 }
 
 .timeline-content p {
-  font-size: 14px;
+  font-size: 13px;
   color: #6b6b6b;
   line-height: 1.55;
 }
@@ -164,7 +164,7 @@ body {
 }
 
 .footer a {
-  font-size: 14px;
+  font-size: 13px;
   color: #6b6b6b;
   text-decoration: none;
   border-bottom: 1px solid #d4d4d4;
