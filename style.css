@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 640px;
+  padding: 80px 24px 60px;
+  margin-left: max(24px, calc((100vw - 640px) / 3));
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 48px;
+}
+
+.hero h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tab {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b6b6b;
+  background: none;
+  border: none;
+  padding: 8px 16px 12px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tab:hover {
+  color: #1a1a1a;
+}
+
+.tab.active {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 24px;
+  margin-left: 4px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e5e5e5;
+}
+
+.timeline-entry {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.timeline-entry:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -24px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d4d4d4;
+  transform: translateX(-3px);
+}
+
+.timeline-content .date {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.timeline-content .company {
+  display: block;
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 6px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 1.55;
+}
+
+/* Project links in timeline */
+.timeline-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.timeline-content a h3 {
+  border-bottom: 1px solid #d4d4d4;
+  display: inline;
+  transition: border-color 0.15s;
+}
+
+.timeline-content a:hover h3 {
+  border-color: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #6b6b6b;
+  text-decoration: none;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.footer a:hover {
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .container {
+    margin-left: 0;
+    padding: 48px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+  }
+
+  .tabs {
+    margin-bottom: 32px;
+  }
+
+  .timeline-entry {
+    padding-bottom: 32px;
+  }
+}

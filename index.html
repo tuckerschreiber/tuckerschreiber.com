@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tucker Schreiber</title>
+  <meta name="description" content="Product leader, founder, and builder. Currently at Felix Health. Previously founded Combo, led products at Shopify and Wealthsimple.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Tucker Schreiber</h1>
+      <p>Product leader, founder, and builder. Currently at Felix Health. Previously founded Combo, led products at Shopify and Wealthsimple.</p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="career">Career</button>
+      <button class="tab" data-tab="projects">Projects</button>
+    </nav>
+
+    <section class="tab-content active" id="career">
+      <div class="timeline">
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2024 &ndash; Present</span>
+            <h3>Senior Product Manager</h3>
+            <span class="company">Felix Health</span>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2025 &ndash; Present</span>
+            <h3>Advisor</h3>
+            <span class="company">Simple Ventures</span>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2019 &ndash; 2023</span>
+            <h3>CEO &amp; Founder</h3>
+            <span class="company">Combo</span>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2017 &ndash; 2019</span>
+            <h3>Product Manager</h3>
+            <span class="company">Wealthsimple</span>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2014 &ndash; 2017</span>
+            <h3>Product Manager</h3>
+            <span class="company">Shopify</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="projects">
+      <div class="timeline">
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2026</span>
+            <a href="https://mimir.build" target="_blank"><h3>Mimir</h3></a>
+            <p>A workspace for product managers that learns your product over time.</p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2026</span>
+            <a href="https://fullrun.app" target="_blank"><h3>Fullrun</h3></a>
+            <p>AI-powered Google Ads automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="date">2026</span>
+            <a href="https://reviewpull.com" target="_blank"><h3>Reviewpull</h3></a>
+            <p>An AI-powered review engine for local businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:schreibertuc@gmail.com">schreibertuc@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
